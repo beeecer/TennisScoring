@@ -17,7 +17,7 @@ namespace TennisScoring
 
 
 
-        public void Total()
+        public void TotalScore()
         {
             Console.WriteLine("Your current set score is: " + set1);
         }

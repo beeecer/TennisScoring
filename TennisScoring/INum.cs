@@ -7,7 +7,7 @@ namespace TennisScoring
     internal interface INum
     {
 
-        void Total();
+        void TotalScore();
 
     }
 }
