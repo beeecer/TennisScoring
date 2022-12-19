@@ -7,13 +7,15 @@ namespace TennisScoring
     internal class TiebreakScore
     {
 
-        public int tiebreakScore;
+        public string tiebreakScore;
 
         public TiebreakScore()
         {
+            Console.WriteLine("Enter your tiebreak in this format 10-7: ");
+            tiebreakScore = Console.ReadLine();
         }
 
-        public TiebreakScore(int tiebreakScore)
+        public TiebreakScore(string tiebreakScore)
         {
             this.tiebreakScore = tiebreakScore;
         }
