@@ -6,8 +6,6 @@ namespace TennisScoring
 {
     internal interface INum
     {
-
         void TotalScore();
-
     }
 }
