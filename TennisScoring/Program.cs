@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
+using System.Threading.Tasks;
 
 namespace TennisScoring
 {
@@ -36,10 +37,13 @@ namespace TennisScoring
         public static string set2;
         public static string tiebreakScore;
 
-        public void TotalScore()
+        public async void TotalScore()
         {
-            Console.WriteLine("Your current first set score is: " + set1 + " and your second set score is: " 
-                              + set2 + " and the tiebreak score is: " + tiebreakScore);
+            Console.WriteLine("Your current first set score is: " + set1 + " and your second set score is: " + set2);
+
+            await Task.Delay(4000);
+
+            Console.WriteLine("and the tiebreak score is:  "+ tiebreakScore);
         }
     }
 }

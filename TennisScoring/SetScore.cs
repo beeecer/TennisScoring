@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace TennisScoring
 {
@@ -9,9 +10,11 @@ namespace TennisScoring
 
       public string scoreSet;
 
-        public SetScore()
+       static SetScore()
         {
             Console.WriteLine("Enter your set score in this format 7-5 6-2: ");
+
+           
             scoreSet = Console.ReadLine();
         }
 
