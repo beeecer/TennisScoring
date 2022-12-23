@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TennisScoring
 {
-    internal class TiebreakScore
+    public class TiebreakScore
     {
 
         public string tiebreakScore;

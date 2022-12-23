@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TennisScoring
 {
-    internal class SetScore
+    public class SetScore
     {
 
       public string scoreSet;

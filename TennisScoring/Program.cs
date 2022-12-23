@@ -5,7 +5,7 @@ namespace TennisScoring
 {
     internal class Program : INum
     {
-         void Main(string[] args)
+        public void Main(string[] args)
         {
             TiebreakScore();
             SetScore();
@@ -13,7 +13,7 @@ namespace TennisScoring
             TotalScore();
         }
 
-        private static void SetScore()
+        public static void SetScore()
         {
             Console.WriteLine("Enter your first set score in this format 7-5: ");
             set1 = Console.ReadLine();
@@ -26,19 +26,19 @@ namespace TennisScoring
         }
 
 
-        private static void TiebreakScore()
+        public static void TiebreakScore()
         {
             Console.WriteLine("Enter your tiebreak in this format 10-7: ");
             tiebreakScore = Console.ReadLine();
         }
 
-        private static string set1;
-        private static string set2;
-        private static string tiebreakScore;
+        public static string set1;
+        public static string set2;
+        public static string tiebreakScore;
 
         public void TotalScore()
         {
-            Console.WriteLine("Your current first set score is: " + tiebreakScore + " and your second set score is: " 
+            Console.WriteLine("Your current first set score is: " + set1 + " and your second set score is: " 
                               + set2 + " and the tiebreak score is: " + tiebreakScore);
         }
     }
